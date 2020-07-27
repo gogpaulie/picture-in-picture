@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -5,4 +7,47 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(65, 65, 65);
+}
+
+.header {
+  color: #f4f4f4;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.button-container {
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Russo One', sans-serif;
+  color: #f4f4f4;
+  font-size: 30px;  
+  padding: 20px 40px;
+  background: linear-gradient(to top, #696969, #575757);  
+  border-radius: 7px;
+  border-style: none;
+  outline: none;
+  text-shadow: 0 2px 5px black;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.4), 0 6px 6px 0 black;
+}
+
+#button:hover {
+  background: linear-gradient(to bottom, #696969, #575757);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4) ;
 }
